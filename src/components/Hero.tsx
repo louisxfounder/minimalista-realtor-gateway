@@ -26,10 +26,10 @@ export const Hero = () => {
       <div className="relative h-full container mx-auto px-4 flex flex-col justify-center items-start">
         <div className="max-w-2xl animate-fadeIn">
           <h1 className="text-4xl md:text-6xl font-playfair text-white mb-6">
-            Discover Your Luxury Dream Home
+            Unlocking the Doors to Real Estate Investing
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8">
-            Expert guidance for discerning buyers in the most prestigious neighborhoods
+            With the right guidance, anyone can invest confidently and build lasting wealth.
           </p>
           
           <form onSubmit={handleSubmit} className="flex gap-4 max-w-md">
