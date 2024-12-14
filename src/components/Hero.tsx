@@ -14,7 +14,7 @@ export const Hero = () => {
   };
 
   return (
-    <div className="relative h-screen min-h-[600px] w-full">
+    <div className="relative h-[calc(100vh-4rem)] min-h-[500px] w-full">
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -25,14 +25,14 @@ export const Hero = () => {
       
       <div className="relative h-full container mx-auto px-4 flex flex-col justify-center items-start">
         <div className="max-w-2xl animate-fadeIn">
-          <h1 className="text-4xl md:text-6xl font-playfair text-white mb-6">
+          <h1 className="text-3xl md:text-6xl font-playfair text-white mb-4 md:mb-6">
             Unlocking the Doors to Real Estate Investing
           </h1>
-          <p className="text-lg md:text-xl text-white/90 mb-8">
+          <p className="text-base md:text-xl text-white/90 mb-6 md:mb-8">
             With the right guidance, anyone can invest confidently and build lasting wealth.
           </p>
           
-          <form onSubmit={handleSubmit} className="flex gap-4 max-w-md">
+          <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-4 w-full max-w-md">
             <Input
               type="email"
               placeholder="Enter your email"
@@ -41,7 +41,7 @@ export const Hero = () => {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <Button type="submit" className="bg-luxury-gold hover:bg-luxury-gold/90">
+            <Button type="submit" className="bg-luxury-gold hover:bg-luxury-gold/90 whitespace-nowrap">
               Get Started
             </Button>
           </form>

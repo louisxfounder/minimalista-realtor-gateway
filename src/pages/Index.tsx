@@ -3,16 +3,20 @@ import { About } from "@/components/About";
 import { Testimonials } from "@/components/Testimonials";
 import { Contact } from "@/components/Contact";
 import { FloatingContact } from "@/components/FloatingContact";
+import { Navigation } from "@/components/Navigation";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
-      <Hero />
-      <About />
-      <Testimonials />
-      <Contact />
-      <FloatingContact />
-    </main>
+    <>
+      <Navigation />
+      <main className="min-h-screen pt-16">
+        <Hero />
+        <About />
+        <Testimonials />
+        <Contact />
+        <FloatingContact />
+      </main>
+    </>
   );
 };
 
