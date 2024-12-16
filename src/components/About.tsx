@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
 
 export const About = () => {
   return (
@@ -32,13 +31,13 @@ export const About = () => {
             </Button>
           </div>
           <div className="relative flex justify-center">
-            <Avatar className="w-[400px] h-[400px] rounded-full border-8 border-white shadow-xl">
-              <AvatarImage
+            <div className="w-[400px] h-[500px] border-8 border-white shadow-xl overflow-hidden rounded-t-[40px]">
+              <img
                 src="/lovable-uploads/8755b63a-7d2f-4bac-a5e9-a01d8a2b0c47.png"
                 alt="Vickie Robles"
-                className="object-cover object-center"
+                className="w-full h-full object-cover object-center"
               />
-            </Avatar>
+            </div>
           </div>
         </div>
       </div>
