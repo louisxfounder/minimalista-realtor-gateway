@@ -17,19 +17,11 @@ export const About = () => {
             </Button>
           </div>
           <div className="relative flex justify-center">
-            <div className="relative w-[400px] h-[500px] overflow-hidden">
-              <div 
-                className="absolute top-0 left-0 right-0 h-[200px] rounded-t-[200px] border-8 border-white bg-white"
-                style={{ boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}
-              ></div>
-              <div 
-                className="absolute top-[192px] left-0 right-0 bottom-0 border-x-8 border-b-8 border-white bg-white"
-                style={{ boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}
-              ></div>
+            <div className="relative w-[400px] h-[500px]">
               <img
                 src="/lovable-uploads/bcd7f3c2-6c48-4106-aff2-632b0d08acab.png"
                 alt="Vickie Robles"
-                className="w-full h-full object-cover object-center relative z-10"
+                className="w-full h-full object-cover object-center rounded-[2rem]"
               />
             </div>
           </div>
