@@ -1,22 +1,17 @@
-import { Hero } from "@/components/Hero";
-import { About } from "@/components/About";
-import { Testimonials } from "@/components/Testimonials";
-import { Contact } from "@/components/Contact";
-import { FloatingContact } from "@/components/FloatingContact";
-import { Navigation } from "@/components/Navigation";
+import React from 'react';
+import Navigation from '@/components/Navigation';
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Contact from '@/components/Contact';
 
 const Index = () => {
   return (
-    <>
+    <div className="min-h-screen">
       <Navigation />
-      <main className="min-h-screen pt-16">
-        <Hero />
-        <About />
-        <Testimonials />
-        <Contact />
-        <FloatingContact />
-      </main>
-    </>
+      <Hero />
+      <About />
+      <Contact />
+    </div>
   );
 };
 
