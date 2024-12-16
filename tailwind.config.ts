@@ -25,7 +25,7 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         luxury: {
-          gold: "#D4AF37",
+          gold: "#B0903D",
           beige: "#F5F5F0",
           dark: "#2D2D2D",
         },
