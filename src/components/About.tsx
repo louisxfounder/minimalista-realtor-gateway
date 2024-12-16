@@ -32,8 +32,14 @@ export const About = () => {
           </div>
           <div className="relative flex justify-center">
             <div className="relative w-[400px] h-[500px] overflow-hidden">
-              <div className="absolute top-0 left-0 right-0 h-[200px] rounded-t-[200px] border-8 border-white bg-white"></div>
-              <div className="absolute top-[192px] left-0 right-0 bottom-0 border-x-8 border-b-8 border-white bg-white"></div>
+              <div 
+                className="absolute top-0 left-0 right-0 h-[200px] rounded-t-[200px] border-8 border-white bg-white"
+                style={{ boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}
+              ></div>
+              <div 
+                className="absolute top-[192px] left-0 right-0 bottom-0 border-x-8 border-b-8 border-white bg-white"
+                style={{ boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}
+              ></div>
               <img
                 src="/lovable-uploads/8755b63a-7d2f-4bac-a5e9-a01d8a2b0c47.png"
                 alt="Vickie Robles"
