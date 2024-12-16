@@ -27,7 +27,7 @@ export const About = () => {
                 style={{ boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}
               ></div>
               <img
-                src="/lovable-uploads/8755b63a-7d2f-4bac-a5e9-a01d8a2b0c47.png"
+                src="/lovable-uploads/36f17c72-1880-4561-b04c-0e2c55b3155b.png"
                 alt="Vickie Robles"
                 className="w-full h-full object-cover object-center relative z-10"
               />
