@@ -20,7 +20,7 @@ export const Navigation = () => {
               <img 
                 src="/lovable-uploads/1378bc35-99a9-4845-aa79-436797fa8a15.png" 
                 alt="HomeSmart" 
-                className="h-4 mt-1 w-full object-contain"
+                className="h-6 mt-1 w-full object-contain"
               />
             </div>
           </div>
