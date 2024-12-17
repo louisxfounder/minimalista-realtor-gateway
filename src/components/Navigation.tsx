@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Home, Settings, Mail } from "lucide-react";
+import { Menu, X, Home, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Navigation = () => {
@@ -7,7 +7,6 @@ export const Navigation = () => {
 
   const menuItems = [
     { label: "Home", icon: <Home className="w-4 h-4" />, href: "/" },
-    { label: "Services", icon: <Settings className="w-4 h-4" />, href: "#services" },
     { label: "Contact", icon: <Mail className="w-4 h-4" />, href: "#contact" }
   ];
 
