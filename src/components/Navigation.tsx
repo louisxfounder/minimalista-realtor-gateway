@@ -17,7 +17,7 @@ export const Navigation = () => {
           <div className="flex items-center gap-2">
             <span className="text-lg md:text-xl font-playfair text-luxury-dark">Vickie Robles</span>
             <img 
-              src="/lovable-uploads/e9904b28-222c-4f9b-ba4a-e572d10d2e02.png" 
+              src="/lovable-uploads/76ba3ef6-4a7c-4902-8dd6-4b3e30557bf9.png" 
               alt="HomeSmart" 
               className="h-6 object-contain"
             />
