@@ -11,8 +11,8 @@ export const Hero = () => {
   useEffect(() => {
     const processLogo = async () => {
       try {
-        // Fetch the original logo
-        const response = await fetch('/lovable-uploads/363130da-e382-4657-91aa-8d8a8e26d603.png');
+        // Fetch the new logo
+        const response = await fetch('/lovable-uploads/f45b657b-fa49-4a82-aaa8-585e6f62ac87.png');
         const blob = await response.blob();
         
         // Load the image
@@ -27,7 +27,7 @@ export const Hero = () => {
       } catch (error) {
         console.error('Error processing logo:', error);
         // Fallback to original logo if processing fails
-        setProcessedLogoUrl('/lovable-uploads/363130da-e382-4657-91aa-8d8a8e26d603.png');
+        setProcessedLogoUrl('/lovable-uploads/f45b657b-fa49-4a82-aaa8-585e6f62ac87.png');
       }
     };
 
@@ -87,7 +87,7 @@ export const Hero = () => {
           <div className="flex flex-col items-center justify-center mt-4">
             <p className="text-white/80 text-sm mb-2">Powered by</p>
             <img 
-              src={processedLogoUrl || '/lovable-uploads/363130da-e382-4657-91aa-8d8a8e26d603.png'}
+              src={processedLogoUrl || '/lovable-uploads/f45b657b-fa49-4a82-aaa8-585e6f62ac87.png'}
               alt="Home Smart Logo" 
               className="h-12 object-contain"
             />
