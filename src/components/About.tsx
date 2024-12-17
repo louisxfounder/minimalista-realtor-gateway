@@ -10,7 +10,10 @@ export const About = () => {
               Vickie Robles
             </h2>
             <p className="text-lg text-luxury-dark/80">
-              Vickie Robles is a dedicated real estate professional and active property investor who believes that everyone can unlock the doors to real estate investing. Drawing from firsthand experience building her own portfolio—rental properties, Airbnbs, and successful flips—Vickie guides clients through every stage of the process. Whether you're a first-timer or a seasoned buyer, her transparent, numbers-driven approach and trusted network of contractors, lenders, and property managers ensure you can invest with clarity and confidence.
+              Real estate investing doesn't have to feel overwhelming. My team and I have spent years building successful portfolios—rental properties, Airbnbs, and house flips—and we've guided countless clients through every stage of the process. Whether you're buying your first property or expanding your investments, my team and I are here to simplify the journey.
+            </p>
+            <p className="text-lg text-luxury-dark/80">
+              We bring a transparent, numbers-driven approach and a trusted network of contractors, lenders, and property managers to the table. You'll always have the support you need, with clear communication and the confidence to make informed decisions. Let's unlock the doors to real estate investing together!
             </p>
             <Button className="bg-luxury-gold hover:bg-luxury-gold/90">
               Schedule a Consultation
