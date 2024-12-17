@@ -32,7 +32,7 @@ export const Hero = () => {
             With the right guidance, anyone can invest confidently and build lasting wealth.
           </p>
           
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 w-full max-w-md mx-auto">
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 w-full max-w-md mx-auto mb-8">
             <Input
               type="email"
               placeholder="Enter your email"
@@ -48,6 +48,15 @@ export const Hero = () => {
               Get Started
             </Button>
           </form>
+
+          <div className="flex flex-col items-center justify-center mt-4">
+            <p className="text-white/80 text-sm mb-2">Powered by</p>
+            <img 
+              src="/lovable-uploads/363130da-e382-4657-91aa-8d8a8e26d603.png" 
+              alt="Home Smart Logo" 
+              className="h-12 object-contain"
+            />
+          </div>
         </div>
       </div>
     </div>
