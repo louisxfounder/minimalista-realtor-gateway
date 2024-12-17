@@ -21,7 +21,7 @@ export const Hero = () => {
           backgroundImage: "url('/lovable-uploads/b961559b-14ad-47b1-9f1c-49bdd76ce49c.png')"
         }}
       />
-      <div className="absolute inset-0 bg-black/30" /> {/* Darkening overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/50" /> {/* Increased opacity from 30% to 50% */}
       
       <div className="relative h-full container mx-auto px-4 flex flex-col justify-center items-center">
         <div className="max-w-2xl animate-fadeIn text-center">
