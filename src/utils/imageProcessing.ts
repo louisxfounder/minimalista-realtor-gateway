@@ -59,18 +59,27 @@ export const removeBackground = async (imageElement: HTMLImageElement): Promise<
     const outputCanvas = document.createElement('canvas');
     outputCanvas.width = canvas.width;
     outputCanvas.height = canvas.height;
-    const outputCtx = outputCanvas.getContext('2d');
+    const outputCtx = outputCanvas.getContext('2d', { willReadFrequently: true });
     
     if (!outputCtx) throw new Error('Could not get output canvas context');
     
+    // Clear the canvas to ensure transparency
+    outputCtx.clearRect(0, 0, outputCanvas.width, outputCanvas.height);
+    
+    // Draw the original image
     outputCtx.drawImage(canvas, 0, 0);
     
+    // Get image data
     const outputImageData = outputCtx.getImageData(0, 0, outputCanvas.width, outputCanvas.height);
     const data = outputImageData.data;
     
+    // Apply mask with proper alpha channel handling
     for (let i = 0; i < result[0].mask.data.length; i++) {
       const alpha = Math.round((1 - result[0].mask.data[i]) * 255);
-      data[i * 4 + 3] = alpha;
+      const pixelIndex = i * 4;
+      if (alpha < 128) { // If mostly transparent
+        data[pixelIndex + 3] = 0; // Set fully transparent
+      }
     }
     
     outputCtx.putImageData(outputImageData, 0, 0);
