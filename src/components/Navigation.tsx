@@ -14,15 +14,13 @@ export const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md z-50 border-b border-luxury-gold/10">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="flex flex-col items-start">
+          <div className="flex items-center gap-2">
             <span className="text-lg md:text-xl font-playfair text-luxury-dark">Vickie Robles</span>
-            <div className="relative" style={{ width: '70%' }}>
-              <img 
-                src="/lovable-uploads/1378bc35-99a9-4845-aa79-436797fa8a15.png" 
-                alt="HomeSmart" 
-                className="h-6 mt-1 w-full object-contain"
-              />
-            </div>
+            <img 
+              src="/lovable-uploads/1378bc35-99a9-4845-aa79-436797fa8a15.png" 
+              alt="HomeSmart" 
+              className="h-6 object-contain"
+            />
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
