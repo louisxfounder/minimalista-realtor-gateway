@@ -5,7 +5,7 @@ export const Services = () => {
   const services = [
     {
       title: "First-Time Home Buyers",
-      description: "Buying your first home is a significant milestone—and an investment in your future. Vickie ensures you find a home that not only suits your living needs but also offers appreciation potential and equity growth.",
+      description: "Buying your first home is a significant milestone—and an investment in your future. My team and I are here to make sure you find a home that not only fits your lifestyle but also has the potential to appreciate in value and build long-term equity.",
       benefits: [
         "Step-by-step guidance through the home-buying process",
         "Expert advice on finding homes with appreciation potential",
