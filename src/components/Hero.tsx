@@ -1,45 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { toast } from "sonner";
-import { removeBackground, loadImage } from "@/utils/imageProcessing";
 
 export const Hero = () => {
   const [email, setEmail] = useState("");
-  const [processedLogoUrl, setProcessedLogoUrl] = useState<string>("");
-
-  useEffect(() => {
-    const processLogo = async () => {
-      try {
-        // Fetch the new logo
-        const response = await fetch('/lovable-uploads/f45b657b-fa49-4a82-aaa8-585e6f62ac87.png');
-        const blob = await response.blob();
-        
-        // Load the image
-        const img = await loadImage(blob);
-        
-        // Remove background
-        const processedBlob = await removeBackground(img);
-        
-        // Create URL for the processed image
-        const processedUrl = URL.createObjectURL(processedBlob);
-        setProcessedLogoUrl(processedUrl);
-      } catch (error) {
-        console.error('Error processing logo:', error);
-        // Fallback to original logo if processing fails
-        setProcessedLogoUrl('/lovable-uploads/f45b657b-fa49-4a82-aaa8-585e6f62ac87.png');
-      }
-    };
-
-    processLogo();
-
-    // Cleanup
-    return () => {
-      if (processedLogoUrl) {
-        URL.revokeObjectURL(processedLogoUrl);
-      }
-    };
-  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -67,7 +32,7 @@ export const Hero = () => {
             With the right guidance, anyone can invest confidently and build lasting wealth.
           </p>
           
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 w-full max-w-md mx-auto mb-8">
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 w-full max-w-md mx-auto">
             <Input
               type="email"
               placeholder="Enter your email"
@@ -83,15 +48,6 @@ export const Hero = () => {
               Get Started
             </Button>
           </form>
-
-          <div className="flex flex-col items-center justify-center mt-4">
-            <p className="text-white/80 text-sm mb-2">Powered by</p>
-            <img 
-              src={processedLogoUrl || '/lovable-uploads/f45b657b-fa49-4a82-aaa8-585e6f62ac87.png'}
-              alt="Home Smart Logo" 
-              className="h-12 object-contain"
-            />
-          </div>
         </div>
       </div>
     </div>
