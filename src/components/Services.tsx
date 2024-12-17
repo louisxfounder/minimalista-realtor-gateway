@@ -38,7 +38,7 @@ export const Services = () => {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl font-playfair text-luxury-dark mb-6">Who We Serve</h2>
           <p className="text-lg text-luxury-dark/80">
-            At Realty Homes by Vickie, we specialize in tailored real estate services to meet the unique needs of our diverse clients. Whether you're buying your first home or building your investment portfolio, Vickie is here to guide you every step of the way.
+            At Realty Homes, my team and I specialize in providing tailored real estate services to meet your unique needs. Whether you're buying your first home or growing your investment portfolio, we're here to guide you every step of the way. With personalized support and trusted expertise, we'll help you navigate the process with confidence.
           </p>
         </div>
 
