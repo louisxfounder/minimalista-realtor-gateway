@@ -23,8 +23,8 @@ export const Hero = () => {
       />
       <div className="absolute inset-0 bg-black/30" /> {/* Darkening overlay for better text readability */}
       
-      <div className="relative h-full container mx-auto px-4 flex flex-col justify-center items-start">
-        <div className="max-w-2xl animate-fadeIn">
+      <div className="relative h-full container mx-auto px-4 flex flex-col justify-center items-center">
+        <div className="max-w-2xl animate-fadeIn text-center">
           <h1 className="text-3xl md:text-6xl font-playfair text-white mb-4 md:mb-6">
             Unlocking the Doors to Real Estate Investing
           </h1>
@@ -32,7 +32,7 @@ export const Hero = () => {
             With the right guidance, anyone can invest confidently and build lasting wealth.
           </p>
           
-          <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-4 w-full max-w-md">
+          <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-4 w-full max-w-md mx-auto">
             <Input
               type="email"
               placeholder="Enter your email"
