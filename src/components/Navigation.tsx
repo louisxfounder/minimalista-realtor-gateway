@@ -15,7 +15,7 @@ export const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <span className="text-xl font-playfair text-luxury-dark">Vickie Robles</span>
+            <span className="text-lg md:text-xl font-playfair text-luxury-dark">Vickie Robles</span>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -37,6 +37,7 @@ export const Navigation = () => {
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
               className="text-luxury-dark hover:text-luxury-gold"
+              aria-label="Toggle menu"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -44,7 +45,7 @@ export const Navigation = () => {
         </div>
 
         {isOpen && (
-          <div className="md:hidden py-4">
+          <div className="md:hidden py-4 animate-fadeIn">
             <div className="flex flex-col space-y-4">
               {menuItems.map((item) => (
                 <a
