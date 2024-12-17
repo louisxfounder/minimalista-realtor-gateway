@@ -25,7 +25,7 @@ export const Contact = () => {
         <div className="max-w-2xl mx-auto text-center mb-8 md:mb-12">
           <h2 className="text-3xl md:text-4xl font-playfair mb-4 md:mb-6">Ready to Unlock Your Real Estate Potential?</h2>
           <p className="text-luxury-dark/80 leading-relaxed text-sm md:text-base">
-            Take the first step toward confident, profitable investing by reaching out today. Whether you're just getting started or looking to expand your portfolio, Vicky Robles provides the guidance, resources, and market insights you need. Complete the form below to schedule your free strategy session, clarify your goals, and discover the opportunities waiting for you. Let's open the door to your real estate success together.
+            Take the first step toward confident and profitable investing by connecting with our team today. Whether you're just starting out or looking to expand your portfolio, we provide the guidance, resources, and market insights you need. Complete the form below to schedule your free strategy session, clarify your goals, and explore the opportunities that await you. Let's work together to achieve your real estate success.
           </p>
         </div>
         
