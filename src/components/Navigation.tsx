@@ -14,8 +14,14 @@ export const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md z-50 border-b border-luxury-gold/10">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
+          <div className="flex flex-col items-start">
             <span className="text-lg md:text-xl font-playfair text-luxury-dark">Vickie Robles</span>
+            <img 
+              src="/lovable-uploads/a662cf92-e02b-4e28-9c0f-5f0ee8888b10.png" 
+              alt="HomeSmart" 
+              className="h-4 mt-1"
+              style={{ width: 'auto' }}
+            />
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
