@@ -1,10 +1,45 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { toast } from "sonner";
+import { removeBackground, loadImage } from "@/utils/imageProcessing";
 
 export const Hero = () => {
   const [email, setEmail] = useState("");
+  const [processedLogoUrl, setProcessedLogoUrl] = useState<string>("");
+
+  useEffect(() => {
+    const processLogo = async () => {
+      try {
+        // Fetch the original logo
+        const response = await fetch('/lovable-uploads/363130da-e382-4657-91aa-8d8a8e26d603.png');
+        const blob = await response.blob();
+        
+        // Load the image
+        const img = await loadImage(blob);
+        
+        // Remove background
+        const processedBlob = await removeBackground(img);
+        
+        // Create URL for the processed image
+        const processedUrl = URL.createObjectURL(processedBlob);
+        setProcessedLogoUrl(processedUrl);
+      } catch (error) {
+        console.error('Error processing logo:', error);
+        // Fallback to original logo if processing fails
+        setProcessedLogoUrl('/lovable-uploads/363130da-e382-4657-91aa-8d8a8e26d603.png');
+      }
+    };
+
+    processLogo();
+
+    // Cleanup
+    return () => {
+      if (processedLogoUrl) {
+        URL.revokeObjectURL(processedLogoUrl);
+      }
+    };
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -52,7 +87,7 @@ export const Hero = () => {
           <div className="flex flex-col items-center justify-center mt-4">
             <p className="text-white/80 text-sm mb-2">Powered by</p>
             <img 
-              src="/lovable-uploads/363130da-e382-4657-91aa-8d8a8e26d603.png" 
+              src={processedLogoUrl || '/lovable-uploads/363130da-e382-4657-91aa-8d8a8e26d603.png'}
               alt="Home Smart Logo" 
               className="h-12 object-contain"
             />
