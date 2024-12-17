@@ -23,7 +23,7 @@ export const Services = () => {
     },
     {
       title: "Experienced Investors",
-      description: "When you're ready to scale your portfolio, Vickie offers speed, efficiency, and a sharp focus on market opportunities. With her expertise, you'll receive clear market analyses and property margin projections.",
+      description: "When you're ready to scale your portfolio, my team and I provide speed, efficiency, and a sharp focus on market opportunities. With our expertise, you'll get clear market analyses and detailed property margin projections to help you make confident investment decisions.",
       benefits: [
         "Detailed market analyses to identify the best opportunities",
         "Strategies for maximizing margins and returns",
