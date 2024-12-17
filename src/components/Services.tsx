@@ -67,9 +67,9 @@ export const Services = () => {
         </div>
 
         <div className="max-w-3xl mx-auto text-center mt-16">
-          <h2 className="text-3xl font-playfair text-luxury-dark mb-6">Why Choose Vickie?</h2>
+          <h2 className="text-3xl font-playfair text-luxury-dark mb-6">Why Choose Us?</h2>
           <p className="text-lg text-luxury-dark/80">
-            With years of experience in real estate and investment strategy, Vickie combines personalized service with market expertise to help you achieve your real estate goals. Whether you're buying your first home or expanding your portfolio, Vickie ensures your success.
+            With years of experience in real estate and investment strategy, our team combines personalized service with proven market expertise to help you achieve your real estate goals. Whether you're purchasing your first home or scaling your investment portfolio, we provide the guidance and tools you need to succeed.
           </p>
         </div>
       </div>
